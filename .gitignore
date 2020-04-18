@@ -1,2 +1,9 @@
 /server/node_modules
 /server/.env
+
+/client/node_modules
+/client/build
+/client/*.log
+/client/*.lock
+
+/client/package-lock.json

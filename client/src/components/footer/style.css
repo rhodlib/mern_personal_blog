@@ -1,0 +1,35 @@
+.footer {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8eaf6;
+    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 150px;
+}
+
+.list li {
+    list-style: none;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.list li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo {
+    padding: 1rem;
+}

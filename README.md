@@ -1,8 +1,12 @@
-# Stack MERN Personal Blog
+# Personal Blog
 
-Simple personal blog using the stack mern (MongoDB, Express, React, NodeJS)
+Simple personal blog using ( MongoDB, Express, Preact, NodeJS )
 
 ## Technologies
+
+## Frontend
+
+* [preact]
 
 ### Backend
 
@@ -11,6 +15,10 @@ Simple personal blog using the stack mern (MongoDB, Express, React, NodeJS)
 * [Mongoose](https://mongoosejs.com/)
 * [dotenv](https://www.npmjs.com/package/dotenv)
 * [cors](https://www.npmjs.com/package/cors)
+* [dompurify]
+* [jsdom]
+* [marked]
+* [validator]
 
 ## Utils
 
