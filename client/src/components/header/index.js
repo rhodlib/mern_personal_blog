@@ -1,13 +1,15 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
-import style from './style.css';
+import Style from './style.css'; 
+import Lamp from "../lamp";
 
 const Header = () => (
-	<header class={style.header}>
+	<header className={Style.header}>
 		<h1>Rhodlib.me</h1>
+		<Lamp/>
 		<nav>
-			<Link activeClassName={style.active} href="/">Blog</Link>
-			<Link activeClassName={style.active} href="/profile">Access</Link>
+			<Link href="/">blog</Link>
+			<Link href="/profile">access</Link>
 		</nav>
 	</header>
 );

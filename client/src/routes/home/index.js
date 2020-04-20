@@ -1,10 +1,21 @@
 import { h } from 'preact';
 import style from './style';
+import Blogheader from "../../components/blogheader";
 
 const Home = () => (
 	<div class={style.home}>
-		<h1>Blog</h1>
-		<p>This is the Home component.</p>
+		<button>
+			<Blogheader/>
+		</button>
+		<button>
+			<Blogheader/>
+		</button>
+		<button>
+			<Blogheader/>
+		</button>
+		<button>
+			<Blogheader/>
+		</button>
 	</div>
 );
 

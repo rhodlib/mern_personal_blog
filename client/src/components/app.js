@@ -6,6 +6,8 @@ import Layout from "./layout";
 // Code-splitting is automated for routes
 import Home from "../routes/home";
 import Login from "../routes/login";
+import Article from "../routes/article";
+import CreateArticle from "../routes/createArticle";
 
 const App = () => (
     <div id="app">
@@ -13,6 +15,8 @@ const App = () => (
         <Router>
           <Home exact path="/" />
           <Login path="/profile/"/>
+          <Article path="/article/:id"/>
+          <CreateArticle path="/new/article"/>
         </Router>
 	  </Layout>
     </div>

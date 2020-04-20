@@ -1,44 +1,17 @@
 .header {
-	display: flex;
-	justify-content: space-between;
-	position: fixed;
-	width: 70%;
-	height: 56px;
-	padding: 0;
-	background: #FFF;
+    display: flex;
+    height: 56px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .header h1 {
-	margin: 0;
-	padding: 0 15px;
-	font-size: 24px;
-	line-height: 56px;
-	font-weight: 400;
-	color: #000;
-}
-
-.header nav {
-	font-size: 100%;
+    margin: 0;
 }
 
 .header nav a {
-	display: inline-block;
-	height: 56px;
-	line-height: 56px;
-	padding: 0 15px;
-	min-width: 50px;
-	text-align: center;
-	background: rgba(255,255,255,0);
-	text-decoration: none;
-	color: #000;
-	will-change: background-color;
-}
-
-.header nav a:hover,
-.header nav a:active {
-	background: rgba(0,0,0,0.2);
-}
-
-.header nav a.active {
-	background: rgba(0,0,0,0.4);
+    text-transform: uppercase;
+    margin: 5px;
 }

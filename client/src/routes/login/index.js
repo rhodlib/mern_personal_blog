@@ -1,11 +1,14 @@
 import { h } from 'preact';
-import style from './style';
+import Style from './style';
 
 const Login = () => (
-	<div class={style.loginContent}>
-		<div class={style.card}>
-
-		</div>
+	<div class={Style.login}>
+		<form>
+			<h2>Login</h2>
+			<input placeholder="Email"/>
+			<input placeholder="Password" type="password"/>
+			<button type="submit">access</button>
+		</form>
 	</div>
 );
 

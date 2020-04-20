@@ -1,0 +1,16 @@
+.lampContainer {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-color: black;
+}
+
+.lampContainer:hover {
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+
+.lampIcon {
+    color: white;
+    height: 100%;
+}

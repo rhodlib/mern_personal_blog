@@ -1,5 +1,17 @@
-.loginContent {
-	padding: 56px 20px;
-	min-height: 100%;
-	width: 70%;
+.login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 75vh;
+}
+
+.login form input {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.login form button {
+	margin-top: 1rem;
+	text-transform: capitalize;
 }

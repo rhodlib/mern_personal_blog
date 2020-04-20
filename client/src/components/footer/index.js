@@ -1,9 +1,9 @@
 import { h } from "preact";
-import style from "./style.css";
+import Style from "./style.css";
 
 const Footer = () => (
-  <footer class={style.footer}>
-    <ul class={style.list}>
+  <footer className={Style.footer}>
+    <ul>
       <li>
         <a href="#">Instagram</a>
       </li>
@@ -29,6 +29,7 @@ const Footer = () => (
         <a href="#">Website</a>
       </li>
     </ul>
+    <p>Created by Rhodlib</p>
   </footer>
 );
 

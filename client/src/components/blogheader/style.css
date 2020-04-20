@@ -1,0 +1,24 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.headerContainer :hover {
+    cursor: pointer;
+}
+
+.imgContainer {
+    background-color: white;
+    border-radius: 15px;
+    width: 86px;
+    height: 86px;
+}
+
+.imgContainer img {
+    width: 100%;
+}
+
+.titleContainer{
+    margin-left: 1.5rem;
+}

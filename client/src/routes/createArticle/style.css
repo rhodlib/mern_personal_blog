@@ -1,0 +1,14 @@
+.form {
+    min-height: 75vh;
+}
+
+.form input {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 50%;
+}
+
+.form textarea {
+    width: 100%;
+    height: 400px;
+}
