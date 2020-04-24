@@ -1,32 +1,32 @@
-import { h } from "preact";
-import Style from "./style.css";
+import React from 'react';
+import Style from "./Footer.module.css";
 
 const Footer = () => (
   <footer className={Style.footer}>
     <ul>
       <li>
-        <a href="#">Instagram</a>
+        <a href="#asda">Instagram</a>
       </li>
       <li>
-        <a href="#">Twitter</a>
+        <a href="#aasdad">Twitter</a>
       </li>
       <li>
-        <a href="#">Telegram</a>
+        <a href="#asd">Telegram</a>
       </li>
       <li>
-        <a href="#">Gmail</a>
+        <a href="#asd">Gmail</a>
       </li>
       <li>
-        <a href="#">GitHub</a>
+        <a href="#asda">GitHub</a>
       </li>
       <li>
-        <a href="#">BitBucket</a>
+        <a href="#asda">BitBucket</a>
       </li>
       <li>
-        <a href="#">Discord</a>
+        <a href="#dasd">Discord</a>
       </li>
       <li>
-        <a href="#">Website</a>
+        <a href="#asd">Website</a>
       </li>
     </ul>
     <p>Created by Rhodlib</p>

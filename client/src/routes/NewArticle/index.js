@@ -1,7 +1,7 @@
-import { h } from "preact";
-import Style from "./style.css";
+import React from 'react';
+import Style from "./NewArticle.module.css";
 
-const CreateArticle = () => (
+const NewArticle = () => (
     <form className={Style.form}>
         <input placeholder="Url image layout"/>
         <input placeholder="Title"/>
@@ -11,4 +11,4 @@ const CreateArticle = () => (
     </form>
 );
 
-export default CreateArticle;
+export default NewArticle;

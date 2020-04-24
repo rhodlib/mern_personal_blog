@@ -6,7 +6,8 @@ Simple personal blog using ( MongoDB, Express, Preact, NodeJS )
 
 ## Frontend
 
-* [preact]
+* [react]
+* [react-router-dom]
 
 ### Backend
 
@@ -19,6 +20,7 @@ Simple personal blog using ( MongoDB, Express, Preact, NodeJS )
 * [jsdom]
 * [marked]
 * [validator]
+* [cookie-parser]
 
 ## Utils
 

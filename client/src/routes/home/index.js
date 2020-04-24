@@ -1,9 +1,9 @@
-import { h } from 'preact';
-import style from './style';
-import Blogheader from "../../components/blogheader";
+import React from 'react';
+import Style from './Home.module.css';
+import Blogheader from "../../components/Blogheader";
 
 const Home = () => (
-	<div class={style.home}>
+	<div className={Style.home}>
 		<button>
 			<Blogheader/>
 		</button>

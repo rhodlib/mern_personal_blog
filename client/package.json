@@ -1,43 +1,39 @@
 {
-  "private": true,
   "name": "client",
-  "version": "0.0.0",
-  "license": "MIT",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "history": "^4.10.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "react-spring": "^8.0.27",
+    "react-transition-group": "^4.3.0"
+  },
   "scripts": {
-    "build": "preact build --template src/template.html",
-    "serve": "sirv build --cors --single",
-    "dev": "preact watch --template src/template.html",
-    "lint": "eslint src",
-    "test": "jest"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "preact",
-    "ignorePatterns": [
-      "build/"
-    ]
+    "extends": "react-app"
   },
-  "devDependencies": {
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-preact-pure": "^2.0.0",
-    "eslint": "^6.0.1",
-    "eslint-config-preact": "^1.1.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.9.0",
-    "jest-preset-preact": "^1.0.0",
-    "preact-cli": "^3.0.0-rc.6",
-    "preact-render-spy": "^1.2.1",
-    "sirv-cli": "^0.4.5"
-  },
-  "dependencies": {
-    "preact": "^10.3.2",
-    "preact-render-to-string": "^5.1.4",
-    "preact-router": "^3.2.1"
-  },
-  "jest": {
-    "preset": "jest-preset-preact",
-    "setupFiles": [
-      "<rootDir>/tests/__mocks__/browserMocks.js",
-      "<rootDir>/tests/__mocks__/setupTests.js"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   }
 }

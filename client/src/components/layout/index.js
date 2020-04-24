@@ -1,6 +1,6 @@
-import { h } from "preact";
-import Header from "../header";
-import Footer from "../footer";
+import React from 'react';
+import Header from "../Header";
+import Footer from "../Footer";
 
 const Layout = ({children}) => {
     return(

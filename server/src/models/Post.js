@@ -8,6 +8,7 @@ const dompurify = createDomPurify(new JSDOM().window);
 
 //Post Schema
 const postSchema = new Schema({
+    image: String,
     title: {
         type: String,
         required: true

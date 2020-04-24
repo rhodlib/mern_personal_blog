@@ -1,10 +1,10 @@
-import { h } from "preact";
-import Style from "./style";
-import Blogheader from "../../components/blogheader";
+import React from 'react';
+import Style from "./Article.module.css";
+import Blogheader from "../../components/Blogheader";
 
 const Article = () => (
   <div className={Style.article}>
-	<Blogheader/>
+	  <Blogheader/>
     <p className={Style.markdown}>
       Some markdown text
     </p>

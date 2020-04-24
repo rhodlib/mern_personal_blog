@@ -1,5 +1,5 @@
-import { h } from "preact";
-import Style from "./style.css";
+import React from 'react';
+import Style from "./Blogheader.module.css";
 import nodejslogo from "../../assets/nodejslogo.png";
 
 const Blogheader = () => (
