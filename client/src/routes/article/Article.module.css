@@ -1,7 +1,7 @@
 .article {
-    height: 75vh;
+    min-height: 75vh;
 }
 
 .markdown {
-    margin: 1rem;
+    margin-top: 3rem;
 }

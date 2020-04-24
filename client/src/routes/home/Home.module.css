@@ -5,3 +5,16 @@
 	align-items: center;
 	min-height: 75vh;
 }
+
+.LinkHome {
+	border-radius: 1rem;
+	width: 100%;
+	color: white;
+	margin: 0.5rem;
+	padding-left: 1rem;
+}
+
+.LinkHome:hover {
+	text-decoration: none !important;
+	background-color: rgba(0, 0, 0, 0.1);
+}

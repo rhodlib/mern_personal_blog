@@ -1,17 +1,18 @@
 import React from 'react';
 import Style from "./Blogheader.module.css";
-import nodejslogo from "../../assets/nodejslogo.png";
 
-const Blogheader = () => (
-  <div className={Style.headerContainer}>
-		<div className={Style.imgContainer}>
-			<img src={nodejslogo} alt="blog img"/>
+const Blogheader = ({image, title, description, createdAt}) => (
+		<div className={Style.headerContainer}>
+			<div className={Style.imgContainer}>
+				<img src={image} alt="logo"/>
+			</div>
+			<div className={Style.titleContainer}>
+				<h3>{title}</h3>
+				<p>{description} - <span>{createdAt}</span></p>
+			</div>
 		</div>
-		<div className={Style.titleContainer}>
-			<h1>Some article about NodeJS</h1>
-			<p>subtitle about nodejs article - <span>4/6/1966</span></p>
-		</div>
-	</div>
 );
+
+
 
 export default Blogheader;

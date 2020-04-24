@@ -9,7 +9,6 @@ const PostCtrl = {}
 PostCtrl.getPosts = async(req, res) => {
     try {
         const posts = await Post.find();
-        posts = posts.map( post => {post.image, post.title, post.description});
         if(posts) {
             res.status(200).send(posts);
         } else {

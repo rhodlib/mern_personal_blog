@@ -1,13 +1,17 @@
 # Personal Blog
 
-Simple personal blog using ( MongoDB, Express, Preact, NodeJS )
+Simple personal markdown blog using MERN stack ( MongoDB, Express, React, NodeJS )
 
 ## Technologies
 
 ## Frontend
 
-* [react]
-* [react-router-dom]
+* [react](https://reactjs.org/)
+* [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+* [history](https://www.npmjs.com/package/history)
+* [axios](https://www.npmjs.com/package/axios)
+* [react-markdown](https://www.npmjs.com/package/react-markdown)
+* [react-spring](https://www.npmjs.com/package/react-spring)
 
 ### Backend
 
@@ -16,11 +20,9 @@ Simple personal blog using ( MongoDB, Express, Preact, NodeJS )
 * [Mongoose](https://mongoosejs.com/)
 * [dotenv](https://www.npmjs.com/package/dotenv)
 * [cors](https://www.npmjs.com/package/cors)
-* [dompurify]
-* [jsdom]
-* [marked]
-* [validator]
-* [cookie-parser]
+* [validator](https://www.npmjs.com/package/validator)
+* [bcryptjs](https://www.npmjs.com/package/bcryptjs)
+* [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
 
 ## Utils
 
