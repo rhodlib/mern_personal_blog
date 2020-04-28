@@ -37,6 +37,9 @@ const App = () => {
                     <Route path="/article/:id">
                       <Article />
                     </Route>
+                    <Route path="/edit/:id">
+                      <NewArticle/>
+                    </Route>
                     <Route path="/new/article">
                       <NewArticle />
                     </Route>

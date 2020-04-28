@@ -7,8 +7,10 @@ const Layout = ({children}) => {
         <div>
             <div>
                 <Header/>
+                <hr/>
                 { children }
             </div>
+            <hr/>
             <Footer/>
         </div>     
     )

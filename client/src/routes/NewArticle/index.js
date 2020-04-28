@@ -1,16 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import Style from "./NewArticle.module.css";
-import { useHistory } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 
 const NewArticle = () => {
     let history = useHistory();
+    let { id } = useParams();
+    const [editing, setEditing] = useState(false);
     const [article, setArticle] = useState({
         image: "",
         title: "",
         description: "",
         markdown: ""
     });
+
+    useEffect(() => {
+        if(id){
+            getArticleById(id);
+            setEditing(true);
+        }
+    },[id]);
+
+    const getArticleById = async (id) => {
+        const res = await axios.get(`http://localhost:4000/api/post/${id}`);
+        setArticle(res.data);
+    }
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -20,13 +34,17 @@ const NewArticle = () => {
 
     const onSubmit = async(event) => {
         event.preventDefault();
-        const { image, title, description, markdown } = article;
-        const post = {image, title, description, markdown};
 
         if(sessionStorage.token){
-            axios.defaults.headers.common['Authorization'] = sessionStorage.token;
-            await axios.post("http://localhost:4000/api/new/post", post);
-            history.push("/");
+            if(editing){
+                axios.defaults.headers.common['Authorization'] = sessionStorage.token;
+                await axios.put(`http://localhost:4000/api/update/${id}`, article);
+                history.push(`/article/${id}`);
+            } else {
+                axios.defaults.headers.common['Authorization'] = sessionStorage.token;
+                await axios.post("http://localhost:4000/api/new/post", article);
+                history.push("/");
+            }
         }
     }
 
