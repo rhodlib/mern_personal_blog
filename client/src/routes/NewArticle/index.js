@@ -54,7 +54,10 @@ const NewArticle = () => {
             <input type="text" required placeholder="Title" name="title" value={article.title} onChange={handleInputChange}/>
             <input type="text" required placeholder="Description" name="description" value={article.description} onChange={handleInputChange}/>
             <textarea required placeholder="Markdown here" name="markdown" value={article.markdown} onChange={handleInputChange}/>
-            <button type="submit">Post</button>
+            <div>
+                <button onClick={() => history.goBack()}>Back</button>
+                <button type="submit">{editing ? "Edit": "Create"}</button>
+            </div>
         </form>
     );
 };

@@ -1,18 +1,34 @@
 import React from 'react';
 import Style from "./Blogheader.module.css";
+import Moment from 'react-moment';
+import 'moment-timezone';
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 
-const Blogheader = ({image, title, description, createdAt}) => (
-		<div className={Style.headerContainer}>
-			<div className={Style.imgContainer}>
-				<img src={image} alt="logo"/>
+const Blogheader = ({image, title, description, createdAt}) => {
+
+	const renderImg = (image) => {
+		if(image === undefined) {
+			return <Skeleton width={70} height={70}/>
+		} else {
+			return <img src={image} alt="logo"/>
+		}
+	}
+
+	return(
+		<SkeletonTheme color="#161f27" highlightColor="#324759">
+			<div className={Style.headerContainer}>
+				<div className={Style.imgContainer}>
+					{
+						renderImg(image)
+					}
+				</div>
+				<div className={Style.titleContainer}>
+					<h3>{title || <Skeleton/>}</h3>
+					<p className={Style.subtitle}>{description || <Skeleton/>} - <span><Moment format="YYYY/MM/DD" date={createdAt}/></span></p>
+				</div>
 			</div>
-			<div className={Style.titleContainer}>
-				<h3>{title}</h3>
-				<p>{description} - <span>{createdAt}</span></p>
-			</div>
-		</div>
-);
-
-
+		</SkeletonTheme>
+	)
+};
 
 export default Blogheader;

@@ -4,6 +4,7 @@ import axios from "axios";
 import Style from "./Article.module.css";
 import Blogheader from "../../components/Blogheader";
 import ReactMarkdown from "react-markdown";
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 
 const Article = () => {
   let history = useHistory();
@@ -38,6 +39,14 @@ const Article = () => {
     }
   }
 
+  const renderMarkdown = () => {
+    if(article.markdown === undefined ) {
+      return <SkeletonTheme color="#161f27" highlightColor="#324759"><Skeleton count={15}/></SkeletonTheme>
+    } else {
+      return <ReactMarkdown className={Style.markdown} source={article.markdown}/>
+    }
+  }
+
   return (
     <div className={Style.article}>
       <div className={Style.controlHeader}>
@@ -50,7 +59,7 @@ const Article = () => {
         {editDeleteArticle(id)}
       </div>
       <hr/>
-      <ReactMarkdown className={Style.markdown} source={article.markdown}/>
+      {renderMarkdown()}
     </div>
   )
 };

@@ -12,21 +12,25 @@ const Home = () => {
   }, []);
 
   const getData = async () => {
-    const resp = await axios.get("http://localhost:4000/api/post");
-    setPosts(resp.data.reverse());
+    try {
+      const resp = await axios.get("http://localhost:4000/api/post");
+      setPosts(resp.data.reverse());
+    } catch(error) {
+      console.log(error);
+    }
   };
 
   const renderPost = () => {
-    if (posts) {
+    if(posts){
       return posts.map((post) => (
         <Link key={post._id} className={Style.LinkHome} to={`/article/${post._id}`}>
-          <Blogheader
-            image={post.image}
-            title={post.title}
-            description={post.description}
-            createdAt={post.createdAt}
-          />
-        </Link>
+              <Blogheader
+              image={post.image}
+              title={post.title}
+              description={post.description}
+              createdAt={post.createdAt}
+              />
+          </Link>
       ));
     }
   };
