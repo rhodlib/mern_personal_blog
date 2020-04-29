@@ -1,24 +1,24 @@
 .article {
-    min-height: 75vh;
+  min-height: 75vh;
 }
 
 .markdown {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .buttons {
-    display: flex;
-    width: 110px;
-    flex-direction: column;
+  display: flex;
+  width: 110px;
+  flex-direction: column;
 }
 
 .linkButton {
-    width: 100%;
+  width: 100%;
 }
 
 .controlHeader {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }

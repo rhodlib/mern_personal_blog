@@ -1,17 +1,17 @@
 .login {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
 }
 
 .login form input {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .login form button {
-	margin-top: 1rem;
-	text-transform: capitalize;
+  margin-top: 1rem;
+  text-transform: capitalize;
 }

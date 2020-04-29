@@ -1,17 +1,17 @@
 .form {
-    display: flex;
-    flex-direction: column;
-	align-items: center;
-    min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 75vh;
 }
 
 .form input {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 50%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 50%;
 }
 
 .form textarea {
-    width: 100%;
-    height: 400px;
+  width: 100%;
+  height: 400px;
 }

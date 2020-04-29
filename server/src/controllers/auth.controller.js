@@ -5,6 +5,7 @@ const User = require("../models/User");
 const authCtrl = {};
 
 //Register user endpoint
+
 authCtrl.registerUser = async (req, res) => {
   const newUser = new User(req.body);
   try {
@@ -12,7 +13,7 @@ authCtrl.registerUser = async (req, res) => {
     await newUser.save();
     res.status(201).send({ created: true });
   } catch (error) {
-    res.status(400).send({error});
+    res.status(400).send({ error });
   }
 };
 
@@ -22,7 +23,7 @@ authCtrl.loginUser = async (req, res) => {
   try {
     const user = await User.findByCredentials(email, password);
     const token = await user.generateAuthToken();
-    res.status(200).send({token});
+    res.status(200).send({ token });
   } catch (error) {
     res.status(400).send({ error });
   }

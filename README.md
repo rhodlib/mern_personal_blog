@@ -31,3 +31,9 @@ Simple personal markdown blog using MERN stack ( MongoDB, Express, React, NodeJS
 * [VScode](https://code.visualstudio.com/)
 * [Chrome](https://www.google.com/intl/es-419/chrome/)
 * [Insomnia](https://insomnia.rest/)
+* [nodemon](https://www.npmjs.com/package/nodemon)
+
+## Styling
+
+* [prettier](https://prettier.io/)
+* [water.css](https://kognise.github.io/water.css/)

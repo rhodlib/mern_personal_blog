@@ -1,24 +1,26 @@
 .headerContainer {
-    display: flex;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
 }
 
 .imgContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 1rem;
-    width: 64px;
-    height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  width: 64px;
+  height: 64px;
 }
 
 .imgContainer img {
-    border-radius: 1rem;
-    width: 80%;
+  border-radius: 1rem;
 }
 
-.titleContainer{
-    margin-left: 1.5rem;
+.titleContainer {
+  margin-left: 1.5rem;
+}
+
+.title {
+  display: flex;
 }

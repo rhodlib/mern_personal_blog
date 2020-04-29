@@ -1,7 +1,13 @@
 //Imports
 const { Router } = require("express");
 const router = Router();
-const { getPosts, getPostById, createPost, deletePost, updatePost,  } = require("../controllers/post.controller");
+const {
+  getPosts,
+  getPostById,
+  createPost,
+  deletePost,
+  updatePost,
+} = require("../controllers/post.controller");
 const auth = require("../middlewares/auth");
 
 //Routes

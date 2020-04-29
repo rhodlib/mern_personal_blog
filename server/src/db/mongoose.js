@@ -3,15 +3,15 @@ const mongoose = require("mongoose");
 
 //DB connection
 const URI = process.env.MONGODB_URI
-    ? process.env.MONGODB_URI
-    : "mongodb://localhost/dbtest";
+  ? process.env.MONGODB_URI
+  : "mongodb://localhost/dbtest";
 
 mongoose.connect(URI, {
-    useCreateIndex: true,
-    useFindAndModify: true,
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: true
+  useCreateIndex: true,
+  useFindAndModify: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: true,
 });
 
 //DB responses
