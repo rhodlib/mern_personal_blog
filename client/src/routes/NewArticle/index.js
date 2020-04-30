@@ -5,8 +5,9 @@ import { useHistory, useParams } from "react-router-dom";
 
 const NewArticle = () => {
   let history = useHistory();
-  let { id } = useParams();
+  let { slug } = useParams();
   const [editing, setEditing] = useState(false);
+  const [id, setId] = useState("");
   const [article, setArticle] = useState({
     image: "",
     title: "",
@@ -15,16 +16,17 @@ const NewArticle = () => {
   });
 
   useEffect(() => {
-    if (id) {
-      getArticleById(id);
+    if (slug) {
+      getArticleBySlug(slug);
       setEditing(true);
     }
-  }, [id]);
+  }, [slug]);
 
-  const getArticleById = async (id) => {
+  const getArticleBySlug = async (slug) => {
     try {
-      const res = await axios.get(`http://localhost:4000/api/post/${id}`);
+      const res = await axios.get(`http://localhost:4000/api/post/${slug}`);
       setArticle(res.data);
+      setId(res.data._id);
     } catch (err) {
       console.log({ error: err });
     }
@@ -43,7 +45,7 @@ const NewArticle = () => {
         try {
           axios.defaults.headers.common["Authorization"] = sessionStorage.token;
           await axios.put(`http://localhost:4000/api/update/${id}`, article);
-          history.push(`/article/${id}`);
+          history.push(`/article/${slug}`);
         } catch (err) {
           console.log({ error: err });
         }

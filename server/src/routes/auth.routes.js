@@ -1,7 +1,7 @@
 //Imports
 const { Router } = require("express");
 const router = Router();
-const { registerUser, loginUser } = require("../controllers/auth.controller");
+const { loginUser } = require("../controllers/auth.controller");
 
 //Routes
 

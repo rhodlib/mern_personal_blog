@@ -3,7 +3,7 @@ const { Router } = require("express");
 const router = Router();
 const {
   getPosts,
-  getPostById,
+  getPostBySlug,
   createPost,
   deletePost,
   updatePost,
@@ -12,7 +12,7 @@ const auth = require("../middlewares/auth");
 
 //Routes
 router.get("/api/post", getPosts);
-router.get("/api/post/:id", getPostById);
+router.get("/api/post/:slug", getPostBySlug);
 
 //Only admin
 router.post("/api/new/post", auth, createPost);

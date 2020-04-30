@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useHistory } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import axios from "axios";
 import Style from "./Article.module.css";
 import Blogheader from "../../components/Blogheader";
@@ -9,15 +9,15 @@ import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 const Article = () => {
   let history = useHistory();
   const [article, setArticle] = useState({});
-  const { id } = useParams();
+  const { slug } = useParams();
 
   useEffect(() => {
-    getDataById(id);
-  }, [id]);
+    getDataBySlug(slug);
+  }, [slug]);
 
-  const getDataById = async (id) => {
+  const getDataBySlug = async (slug) => {
     try {
-      const res = await axios.get(`http://localhost:4000/api/post/${id}`);
+      const res = await axios.get(`http://localhost:4000/api/post/${slug}`);
       setArticle(res.data);
     } catch (err) {
       console.log({ error: err });
@@ -47,7 +47,7 @@ const Article = () => {
             Delete
           </button>
           <button
-            onClick={() => history.push(`/edit/${id}`)}
+            onClick={() => history.push(`/edit/${slug}`)}
             className={Style.linkButton}
           >
             Edit
@@ -80,7 +80,7 @@ const Article = () => {
           description={article.description}
           createdAt={article.createdAt}
         />
-        {editDeleteArticle(id)}
+        {editDeleteArticle(article._id)}
       </div>
       <hr />
       {renderMarkdown()}

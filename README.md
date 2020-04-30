@@ -25,6 +25,11 @@ Simple personal markdown blog using MERN stack ( MongoDB, Express, React, NodeJS
 * [validator](https://www.npmjs.com/package/validator)
 * [bcryptjs](https://www.npmjs.com/package/bcryptjs)
 * [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+* [slugify](https://www.npmjs.com/package/slugify)
+
+### Database
+
+* [MongoDB](https://www.mongodb.com/)
 
 ## Utils
 

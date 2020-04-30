@@ -8,10 +8,9 @@ const URI = process.env.MONGODB_URI
 
 mongoose.connect(URI, {
   useCreateIndex: true,
-  useFindAndModify: true,
+  useFindAndModify: false,
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useFindAndModify: true,
 });
 
 //DB responses

@@ -29,9 +29,9 @@ PostCtrl.createPost = async (req, res) => {
   }
 };
 
-PostCtrl.getPostById = async (req, res) => {
+PostCtrl.getPostBySlug = async (req, res) => {
   try {
-    const post = await Post.findById(req.params.id);
+    const post = await Post.findOne({slug: req.params.slug});
     res.status(200).send(post);
   } catch (err) {
     res.status(404).send(err);

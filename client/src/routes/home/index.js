@@ -27,7 +27,7 @@ const Home = () => {
         <button
           key={post._id}
           className={Style.button}
-          onClick={() => history.push(`/article/${post._id}`)}
+          onClick={() => history.push(`/article/${post.slug}`)}
         >
           <Blogheader
             image={post.image}
