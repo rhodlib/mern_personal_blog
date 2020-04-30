@@ -19,7 +19,7 @@ const Login = () => {
 	event.preventDefault();
 	try {
 		const response = await axios.post(
-		  "http://localhost:4000/api/user/login",
+		  "https://rhodlib-blog.herokuapp.com/api/user/login",
 		  loginForm
 		);
 		sessionStorage.setItem("token", response.data.token);

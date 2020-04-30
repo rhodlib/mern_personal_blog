@@ -24,7 +24,7 @@ const NewArticle = () => {
 
   const getArticleBySlug = async (slug) => {
     try {
-      const res = await axios.get(`http://localhost:4000/api/post/${slug}`);
+      const res = await axios.get(`https://rhodlib-blog.herokuapp.com/api/post/${slug}`);
       setArticle(res.data);
       setId(res.data._id);
     } catch (err) {
@@ -44,7 +44,7 @@ const NewArticle = () => {
       if (editing) {
         try {
           axios.defaults.headers.common["Authorization"] = sessionStorage.token;
-          await axios.put(`http://localhost:4000/api/update/${id}`, article);
+          await axios.put(`https://rhodlib-blog.herokuapp.com/api/update/${id}`, article);
           history.push(`/article/${slug}`);
         } catch (err) {
           console.log({ error: err });
@@ -52,7 +52,7 @@ const NewArticle = () => {
       } else {
         try {
           axios.defaults.headers.common["Authorization"] = sessionStorage.token;
-          await axios.post("http://localhost:4000/api/new/post", article);
+          await axios.post("https://rhodlib-blog.herokuapp.com/api/new/post", article);
           history.push("/");
         } catch (err) {
           console.log({ error: err });

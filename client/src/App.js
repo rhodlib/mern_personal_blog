@@ -25,22 +25,12 @@ const App = () => {
         {transitions.map(({ item, props, key }) => (
           <animated.div key={key} style={props}>
             <Switch location={item}>
-              <Route strict exact path="/">
-                <Home />
-              </Route>
-              <Route exact path="/login">
-                <Login />
-              </Route>
-              <Route path="/article/:slug">
-                <Article/>
-              </Route>
-              <Route path="/edit/:slug">
-                <NewArticle />
-              </Route>
-              <Route path="/new/article">
-                <NewArticle />
-              </Route>
-              <Redirect to="" />
+              <Route strict exact path="/" component={Home}/>
+              <Route exact path="/login" component={Login}/>
+              <Route path="/article/:slug" component={Article}/>
+              <Route path="/edit/:slug" component={NewArticle}/>
+              <Route path="/new/article" component={NewArticle}/>
+              <Redirect to="/" />
             </Switch>
           </animated.div>
         ))}

@@ -14,7 +14,7 @@ const Home = () => {
 
   const getData = async () => {
     try {
-      const resp = await axios.get("http://localhost:4000/api/post");
+      const resp = await axios.get("https://rhodlib-blog.herokuapp.com/api/post");
       setPosts(resp.data.reverse());
     } catch (err) {
       console.log({ error: err });

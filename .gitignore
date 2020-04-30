@@ -2,6 +2,7 @@
 
 /server/node_modules
 /server/.env
+/server/.gitignore
 
 ## Client
 
@@ -9,6 +10,8 @@
 /client/node_modules
 /client/.pnp
 /client/.pnp.js
+/client/build
+/client/.gitignore
 
 # testing
 /client/coverage

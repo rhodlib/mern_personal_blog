@@ -17,7 +17,7 @@ const Article = () => {
 
   const getDataBySlug = async (slug) => {
     try {
-      const res = await axios.get(`http://localhost:4000/api/post/${slug}`);
+      const res = await axios.get(`https://rhodlib-blog.herokuapp.com/api/post/${slug}`);
       setArticle(res.data);
     } catch (err) {
       console.log({ error: err });
@@ -28,7 +28,7 @@ const Article = () => {
     if (window.confirm("Do you wanna delete this article?")) {
       try {
         axios.defaults.headers.common["Authorization"] = sessionStorage.token;
-        await axios.delete(`http://localhost:4000/api/delete/${id}`);
+        await axios.delete(`https://rhodlib-blog.herokuapp.com/api/delete/${id}`);
         history.push("/");
       } catch (err) {
         console.log({ error: err });
