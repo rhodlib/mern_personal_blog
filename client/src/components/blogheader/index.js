@@ -1,7 +1,6 @@
 import React from "react";
 import Style from "./Blogheader.module.css";
-import Moment from "react-moment";
-import "moment-timezone";
+import moment from "moment";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 
 const Blogheader = ({ image, title, description, createdAt }) => {
@@ -22,7 +21,7 @@ const Blogheader = ({ image, title, description, createdAt }) => {
           <p className={Style.subtitle}>
             {description || <Skeleton />} -{" "}
             <span>
-              <Moment format="YYYY/MM/DD" date={createdAt} />
+              {moment(createdAt).format("YYYY/MM/DD")}
             </span>
           </p>
         </div>

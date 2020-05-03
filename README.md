@@ -2,6 +2,8 @@
 
 Simple personal markdown blog using MERN stack ( MongoDB, Express, React, NodeJS )
 
+[BLOG](https://blog.rhodlib.me/)
+
 ## Technologies
 
 ## Frontend
@@ -12,7 +14,7 @@ Simple personal markdown blog using MERN stack ( MongoDB, Express, React, NodeJS
 * [axios](https://www.npmjs.com/package/axios)
 * [react-markdown](https://www.npmjs.com/package/react-markdown)
 * [react-spring](https://www.npmjs.com/package/react-spring)
-* [react-moment](https://www.npmjs.com/package/react-moment)
+* [momentjs](https://momentjs.com/)
 * [react-loading-skeleton](https://www.npmjs.com/package/react-loading-skeleton)
 
 ### Backend

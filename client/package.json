@@ -2,26 +2,22 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rhodlib.github.io/rhodlib_blog/",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^10.0.4",
+    "@testing-library/user-event": "^10.1.0",
     "axios": "^0.19.2",
     "history": "^4.10.1",
-    "moment-timezone": "^0.5.28",
     "react": "^16.13.1",
+    "moment": "2.24.0",
     "react-dom": "^16.13.1",
     "react-loading-skeleton": "^2.0.1",
     "react-markdown": "^4.3.1",
-    "react-moment": "^0.9.7",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "react-spring": "^8.0.27"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,7 +38,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "gh-pages": "^2.2.0"
-  }
+  "devDependencies": {}
 }

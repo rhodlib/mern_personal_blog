@@ -1,20 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url('https://css.gg/spinner-two.css');
 
 html,
 body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  min-height: 100%;
+  width: 100%;
   margin: 0;
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+
+#root {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 * {
   box-sizing: border-box;
-}
-
-#App {
-  width: 100%;
 }

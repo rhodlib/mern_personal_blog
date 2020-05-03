@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     getData();
-  }, []);
+  },[]);
 
   const getData = async () => {
     try {
@@ -22,7 +22,9 @@ const Home = () => {
   };
 
   const renderPost = () => {
-    if (posts) {
+    if (posts.length === 0) {
+      return <i className="gg-spinner-two"></i>
+    } else {
       return posts.map((post) => (
         <button
           key={post._id}
