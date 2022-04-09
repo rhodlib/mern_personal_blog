@@ -9,7 +9,7 @@
     "axios": "^0.19.2",
     "history": "^4.10.1",
     "react": "^16.13.1",
-    "moment": "2.24.0",
+    "moment": "2.29.2",
     "react-dom": "^16.13.1",
     "react-loading-skeleton": "^2.0.1",
     "react-markdown": "^4.3.1",
